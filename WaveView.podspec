@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.3'
   s.ios.deployment_target = '8.3'
   s.source       = { :git => 'https://github.com/skting/WaveView.git', :tag => s.version.to_s }
-  
+ 
   s.requires_arc = true
   s.source_files = 'WaveView/**/*.{h,m}'
 
