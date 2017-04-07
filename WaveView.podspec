@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name         = 'WaveView'
   s.summary      = 'Create Wave View And Wave Progress View Easily.'
-  s.version      = '0.1.1'
+  s.version      = '0.1.2'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'shangshanbin' => 'shangshanbin@gmail.com' }
   s.social_media_url = 'https://github.com/skting/WaveView'
