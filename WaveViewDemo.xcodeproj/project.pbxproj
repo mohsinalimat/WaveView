@@ -11,9 +11,9 @@
 		D63EB16A1E96287E00BCBADB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D63EB1691E96287E00BCBADB /* AppDelegate.m */; };
 		D63EB1721E96287F00BCBADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63EB1711E96287F00BCBADB /* Assets.xcassets */; };
 		D63EB1751E96287F00BCBADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63EB1731E96287F00BCBADB /* LaunchScreen.storyboard */; };
-		D68EC57B1E96D34A0098BB1C /* TargetWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D68EC5761E96D34A0098BB1C /* TargetWeakProxy.m */; };
-		D68EC57C1E96D34A0098BB1C /* WaveProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D68EC5781E96D34A0098BB1C /* WaveProgressView.m */; };
-		D68EC57D1E96D34A0098BB1C /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = D68EC57A1E96D34A0098BB1C /* WaveView.m */; };
+		D67316901E97C0BC0009FDF4 /* TargetWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D673168A1E97C0BC0009FDF4 /* TargetWeakProxy.m */; };
+		D67316911E97C0BC0009FDF4 /* WaveProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D673168D1E97C0BC0009FDF4 /* WaveProgressView.m */; };
+		D67316921E97C0BC0009FDF4 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = D673168F1E97C0BC0009FDF4 /* WaveView.m */; };
 		D68EC5811E9756240098BB1C /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68EC5801E9756240098BB1C /* MainTableViewController.m */; };
 		D68EC5871E975AA00098BB1C /* WaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68EC5851E975AA00098BB1C /* WaveViewController.m */; };
 		D68EC5881E975AA00098BB1C /* WaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D68EC5861E975AA00098BB1C /* WaveViewController.xib */; };
@@ -29,13 +29,13 @@
 		D63EB1711E96287F00BCBADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D63EB1741E96287F00BCBADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D63EB1761E96287F00BCBADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D68EC5751E96D34A0098BB1C /* TargetWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetWeakProxy.h; sourceTree = "<group>"; };
-		D68EC5761E96D34A0098BB1C /* TargetWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetWeakProxy.m; sourceTree = "<group>"; };
-		D68EC5771E96D34A0098BB1C /* WaveProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveProgressView.h; sourceTree = "<group>"; };
-		D68EC5781E96D34A0098BB1C /* WaveProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveProgressView.m; sourceTree = "<group>"; };
-		D68EC5791E96D34A0098BB1C /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
-		D68EC57A1E96D34A0098BB1C /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
-		D68EC57E1E96D3C40098BB1C /* Wave.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
+		D67316891E97C0BC0009FDF4 /* TargetWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetWeakProxy.h; sourceTree = "<group>"; };
+		D673168A1E97C0BC0009FDF4 /* TargetWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetWeakProxy.m; sourceTree = "<group>"; };
+		D673168B1E97C0BC0009FDF4 /* Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wave.h; sourceTree = "<group>"; };
+		D673168C1E97C0BC0009FDF4 /* WaveProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveProgressView.h; sourceTree = "<group>"; };
+		D673168D1E97C0BC0009FDF4 /* WaveProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveProgressView.m; sourceTree = "<group>"; };
+		D673168E1E97C0BC0009FDF4 /* WaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
+		D673168F1E97C0BC0009FDF4 /* WaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
 		D68EC57F1E9756240098BB1C /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		D68EC5801E9756240098BB1C /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		D68EC5841E975AA00098BB1C /* WaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveViewController.h; sourceTree = "<group>"; };
@@ -60,7 +60,6 @@
 		D63EB1591E96287E00BCBADB = {
 			isa = PBXGroup;
 			children = (
-				D68EC5741E96D3090098BB1C /* WaveView */,
 				D63EB1641E96287E00BCBADB /* WaveViewDemo */,
 				D63EB1631E96287E00BCBADB /* Products */,
 			);
@@ -77,6 +76,7 @@
 		D63EB1641E96287E00BCBADB /* WaveViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D67316881E97C0BC0009FDF4 /* WaveView */,
 				D68EC5891E976EF40098BB1C /* 波浪进度展示Progress */,
 				D68EC5831E9756D30098BB1C /* 波浪View */,
 				D68EC57F1E9756240098BB1C /* MainTableViewController.h */,
@@ -99,19 +99,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D68EC5741E96D3090098BB1C /* WaveView */ = {
+		D67316881E97C0BC0009FDF4 /* WaveView */ = {
 			isa = PBXGroup;
 			children = (
-				D68EC5751E96D34A0098BB1C /* TargetWeakProxy.h */,
-				D68EC5761E96D34A0098BB1C /* TargetWeakProxy.m */,
-				D68EC5771E96D34A0098BB1C /* WaveProgressView.h */,
-				D68EC5781E96D34A0098BB1C /* WaveProgressView.m */,
-				D68EC5791E96D34A0098BB1C /* WaveView.h */,
-				D68EC57A1E96D34A0098BB1C /* WaveView.m */,
-				D68EC57E1E96D3C40098BB1C /* Wave.h */,
+				D67316891E97C0BC0009FDF4 /* TargetWeakProxy.h */,
+				D673168A1E97C0BC0009FDF4 /* TargetWeakProxy.m */,
+				D673168B1E97C0BC0009FDF4 /* Wave.h */,
+				D673168C1E97C0BC0009FDF4 /* WaveProgressView.h */,
+				D673168D1E97C0BC0009FDF4 /* WaveProgressView.m */,
+				D673168E1E97C0BC0009FDF4 /* WaveView.h */,
+				D673168F1E97C0BC0009FDF4 /* WaveView.m */,
 			);
-			name = WaveView;
-			path = WaveViewDemo/WaveView;
+			path = WaveView;
 			sourceTree = "<group>";
 		};
 		D68EC5831E9756D30098BB1C /* 波浪View */ = {
@@ -207,14 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D68EC57B1E96D34A0098BB1C /* TargetWeakProxy.m in Sources */,
-				D68EC57C1E96D34A0098BB1C /* WaveProgressView.m in Sources */,
+				D67316911E97C0BC0009FDF4 /* WaveProgressView.m in Sources */,
 				D68EC5811E9756240098BB1C /* MainTableViewController.m in Sources */,
 				D63EB16A1E96287E00BCBADB /* AppDelegate.m in Sources */,
+				D67316921E97C0BC0009FDF4 /* WaveView.m in Sources */,
 				D63EB1671E96287E00BCBADB /* main.m in Sources */,
-				D68EC57D1E96D34A0098BB1C /* WaveView.m in Sources */,
 				D68EC5871E975AA00098BB1C /* WaveViewController.m in Sources */,
 				D68EC5901E9771120098BB1C /* WaveProgressController.m in Sources */,
+				D67316901E97C0BC0009FDF4 /* TargetWeakProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
