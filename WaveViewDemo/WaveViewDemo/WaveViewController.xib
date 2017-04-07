@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WaveViewController">
+            <connections>
+                <outlet property="changeColorBtn" destination="Qap-0R-nlF" id="xNn-bw-jF3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="waveView" destination="5VW-tY-HcP" id="oOf-Dl-hqH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5VW-tY-HcP" customClass="WaveView">
+                    <rect key="frame" x="20" y="20" width="335" height="627"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pht-4f-Jwg">
+                            <rect key="frame" x="80" y="80" width="175" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="WAS-m0-zFm"/>
+                            </constraints>
+                            <state key="normal" title="show double wave">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="showDoubleWave:" destination="-1" eventType="touchUpInside" id="55r-OG-GiT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obz-Uu-t8s">
+                            <rect key="frame" x="80" y="140" width="175" height="30"/>
+                            <state key="normal" title="add wave amplitude">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="changeWaveAmplitude:" destination="-1" eventType="touchUpInside" id="bNH-1a-j23"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qap-0R-nlF">
+                            <rect key="frame" x="80" y="200" width="175" height="30"/>
+                            <state key="normal" title="change wave color">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="changeColor:" destination="-1" eventType="touchUpInside" id="Nxp-3l-d0x"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYf-Te-fYS">
+                            <rect key="frame" x="80" y="260" width="175" height="30"/>
+                            <state key="normal" title="change wave view type">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="changeWaveType:" destination="-1" eventType="touchUpInside" id="wf9-iV-jXm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTK-b3-e7W">
+                            <rect key="frame" x="50" y="547" width="235" height="30"/>
+                            <state key="normal" title="Back"/>
+                            <connections>
+                                <action selector="backClick:" destination="-1" eventType="touchUpInside" id="zCF-zt-eRo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="XYf-Te-fYS" secondAttribute="trailing" constant="80" id="05f-Gp-ZjH"/>
+                        <constraint firstItem="pht-4f-Jwg" firstAttribute="top" secondItem="5VW-tY-HcP" secondAttribute="top" constant="80" id="329-zY-Qc9"/>
+                        <constraint firstItem="pht-4f-Jwg" firstAttribute="leading" secondItem="5VW-tY-HcP" secondAttribute="leading" constant="80" id="6XV-Ze-Ak5"/>
+                        <constraint firstAttribute="trailing" secondItem="Qap-0R-nlF" secondAttribute="trailing" constant="80" id="8vk-xe-FsX"/>
+                        <constraint firstItem="Qap-0R-nlF" firstAttribute="leading" secondItem="5VW-tY-HcP" secondAttribute="leading" constant="80" id="EaT-Qr-h9F"/>
+                        <constraint firstItem="Qap-0R-nlF" firstAttribute="top" secondItem="Obz-Uu-t8s" secondAttribute="bottom" constant="30" id="GrH-7I-1Ou"/>
+                        <constraint firstItem="Obz-Uu-t8s" firstAttribute="top" secondItem="pht-4f-Jwg" secondAttribute="bottom" constant="30" id="IjW-m4-hbB"/>
+                        <constraint firstItem="XYf-Te-fYS" firstAttribute="top" secondItem="Qap-0R-nlF" secondAttribute="bottom" constant="30" id="PbK-4L-b1E"/>
+                        <constraint firstItem="eTK-b3-e7W" firstAttribute="leading" secondItem="5VW-tY-HcP" secondAttribute="leading" constant="50" id="UBg-N8-6XJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Obz-Uu-t8s" secondAttribute="trailing" constant="80" id="Uhx-fc-07b"/>
+                        <constraint firstAttribute="trailing" secondItem="pht-4f-Jwg" secondAttribute="trailing" constant="80" id="VEx-Sb-cld"/>
+                        <constraint firstAttribute="bottom" secondItem="eTK-b3-e7W" secondAttribute="bottom" constant="50" id="Y02-Tr-y65"/>
+                        <constraint firstAttribute="trailing" secondItem="eTK-b3-e7W" secondAttribute="trailing" constant="50" id="pXw-6E-2bQ"/>
+                        <constraint firstItem="Obz-Uu-t8s" firstAttribute="leading" secondItem="5VW-tY-HcP" secondAttribute="leading" constant="80" id="rz0-VT-H0f"/>
+                        <constraint firstItem="XYf-Te-fYS" firstAttribute="leading" secondItem="5VW-tY-HcP" secondAttribute="leading" constant="80" id="sza-Op-Q9h"/>
+                    </constraints>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="subviews">
+                            <include reference="pht-4f-Jwg"/>
+                            <include reference="Obz-Uu-t8s"/>
+                            <include reference="Qap-0R-nlF"/>
+                            <include reference="XYf-Te-fYS"/>
+                            <include reference="eTK-b3-e7W"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5VW-tY-HcP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="IGJ-T1-3Eg"/>
+                <constraint firstItem="5VW-tY-HcP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="MVb-vs-O7C"/>
+                <constraint firstAttribute="trailing" secondItem="5VW-tY-HcP" secondAttribute="trailing" constant="20" id="kjJ-il-CJ4"/>
+                <constraint firstAttribute="bottom" secondItem="5VW-tY-HcP" secondAttribute="bottom" constant="20" id="upa-te-LLi"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V4x-XD-8ke">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="show double wave"/>
+        </button>
+    </objects>
+</document>

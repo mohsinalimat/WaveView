@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WaveProgressController">
+            <connections>
+                <outlet property="showView" destination="1bZ-dM-srQ" id="RBq-yq-puO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bZ-dM-srQ">
+                    <rect key="frame" x="137.5" y="50" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="kwS-8M-l2T"/>
+                        <constraint firstAttribute="width" constant="100" id="ohe-AJ-yHO"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3o-be-fVL">
+                    <rect key="frame" x="50" y="180" width="275" height="30"/>
+                    <state key="normal" title="percent add 10%"/>
+                    <connections>
+                        <action selector="addPercentClick:" destination="-1" eventType="touchUpInside" id="Zfq-Os-Yj4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b16-65-xxE">
+                    <rect key="frame" x="50" y="240" width="275" height="30"/>
+                    <state key="normal" title="percent minus 10%"/>
+                    <connections>
+                        <action selector="minusPercentClick:" destination="-1" eventType="touchUpInside" id="rcO-O4-ibt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4p-sM-xAG">
+                    <rect key="frame" x="50" y="300" width="275" height="30"/>
+                    <state key="normal" title="change type"/>
+                    <connections>
+                        <action selector="changeTypeClick:" destination="-1" eventType="touchUpInside" id="40I-4l-2N4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhO-nh-Dyl">
+                    <rect key="frame" x="50" y="360" width="275" height="30"/>
+                    <state key="normal" title="show percent"/>
+                    <connections>
+                        <action selector="showPercentClick:" destination="-1" eventType="touchUpInside" id="0qa-Wa-bzo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBj-J9-6Am">
+                    <rect key="frame" x="50" y="420" width="275" height="30"/>
+                    <state key="normal" title="single wave"/>
+                    <connections>
+                        <action selector="singleWaveClick:" destination="-1" eventType="touchUpInside" id="r87-9V-Jgz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOm-FJ-qWX">
+                    <rect key="frame" x="50" y="607" width="275" height="30"/>
+                    <state key="normal" title="back"/>
+                    <connections>
+                        <action selector="backClick:" destination="-1" eventType="touchUpInside" id="Lgw-Lf-9bg"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="0ga-Aq-qq9">
+                    <rect key="frame" x="18" y="480" width="339" height="31"/>
+                    <connections>
+                        <action selector="sliderChange:" destination="-1" eventType="valueChanged" id="u0y-NP-pNN"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lhO-nh-Dyl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="3ad-PA-FGl"/>
+                <constraint firstItem="1bZ-dM-srQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5EI-a2-g6k"/>
+                <constraint firstItem="Z4p-sM-xAG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="D5P-Bx-Luk"/>
+                <constraint firstAttribute="trailing" secondItem="Z4p-sM-xAG" secondAttribute="trailing" constant="50" id="HTz-8e-hnF"/>
+                <constraint firstItem="kOm-FJ-qWX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Lty-Am-B1s"/>
+                <constraint firstItem="b16-65-xxE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="M3V-0p-8zs"/>
+                <constraint firstAttribute="trailing" secondItem="jBj-J9-6Am" secondAttribute="trailing" constant="50" id="NZv-hl-Qwt"/>
+                <constraint firstItem="1bZ-dM-srQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="Obq-gG-WgK"/>
+                <constraint firstItem="Q3o-be-fVL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="ST9-hG-6Lf"/>
+                <constraint firstAttribute="bottom" secondItem="kOm-FJ-qWX" secondAttribute="bottom" constant="30" id="YiI-Bs-tpU"/>
+                <constraint firstAttribute="trailing" secondItem="0ga-Aq-qq9" secondAttribute="trailing" constant="20" id="fEK-r6-qpg"/>
+                <constraint firstItem="Q3o-be-fVL" firstAttribute="top" secondItem="1bZ-dM-srQ" secondAttribute="bottom" constant="30" id="fGz-0S-fzv"/>
+                <constraint firstAttribute="trailing" secondItem="kOm-FJ-qWX" secondAttribute="trailing" constant="50" id="fOh-l3-0KK"/>
+                <constraint firstItem="Z4p-sM-xAG" firstAttribute="top" secondItem="b16-65-xxE" secondAttribute="bottom" constant="30" id="fTJ-qm-Ep4"/>
+                <constraint firstAttribute="trailing" secondItem="lhO-nh-Dyl" secondAttribute="trailing" constant="50" id="hj4-c4-A9U"/>
+                <constraint firstAttribute="trailing" secondItem="b16-65-xxE" secondAttribute="trailing" constant="50" id="m7j-2x-Ynh"/>
+                <constraint firstItem="jBj-J9-6Am" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="mcT-Yx-BC6"/>
+                <constraint firstItem="lhO-nh-Dyl" firstAttribute="top" secondItem="Z4p-sM-xAG" secondAttribute="bottom" constant="30" id="pBh-TX-0in"/>
+                <constraint firstItem="0ga-Aq-qq9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="r61-tq-j2P"/>
+                <constraint firstItem="0ga-Aq-qq9" firstAttribute="top" secondItem="jBj-J9-6Am" secondAttribute="bottom" constant="30" id="ufm-bR-ajj"/>
+                <constraint firstAttribute="trailing" secondItem="Q3o-be-fVL" secondAttribute="trailing" constant="50" id="vS2-MO-JEg"/>
+                <constraint firstItem="b16-65-xxE" firstAttribute="top" secondItem="Q3o-be-fVL" secondAttribute="bottom" constant="30" id="xSd-KS-YT8"/>
+                <constraint firstItem="jBj-J9-6Am" firstAttribute="top" secondItem="lhO-nh-Dyl" secondAttribute="bottom" constant="30" id="zzl-ha-Yqc"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
